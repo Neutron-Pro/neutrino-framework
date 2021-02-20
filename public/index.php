@@ -1,4 +1,5 @@
 <?php
+session_start();
 use NeutronStars\Neutrino\Core\Configuration;
 use NeutronStars\Neutrino\Core\Kernel;
 use NeutronStars\Router\Router;
