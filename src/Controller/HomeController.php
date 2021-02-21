@@ -1,7 +1,6 @@
 <?php
 namespace App\Controller;
 
-
 use NeutronStars\Form\Bootstrap\EmailElement;
 use NeutronStars\Form\Bootstrap\SubmitElement;
 use NeutronStars\Form\Bootstrap\TextAreaElement;
