@@ -16,7 +16,7 @@
     "charset": "utf8mb4",
     "mode": {
       "fetch": 5,
-      "errors": 1
+      "error": 1
     }
   },
 
