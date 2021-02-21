@@ -14,7 +14,9 @@ class HomeController extends Controller
 {
     public function index(): void
     {
-        $this->render('app.home');
+        $this->render('app.home', [
+            'flashes' => $this->getFlash()
+        ]);
     }
 
     public function contact(): void
@@ -28,13 +30,12 @@ class HomeController extends Controller
                      'name'    => $form->get('name'),
                      'message' => $form->get('message')
                  ]);
-            $success = 'Votre message à bien été envoyé.';
-            $form = $this->createFormContact();
+            $this->addFlash('success', 'Votre message à bien été envoyé.');
+            $this->redirect('home');
         }
 
         $this->render('app.contact', [
-            'form'    => $form,
-            'success' => $success ?? null
+            'form'    => $form
         ]);
     }
 
@@ -45,7 +46,7 @@ class HomeController extends Controller
                 'min' => 3,
                 'max' => 32
             ], 'Entrez votre nom'))
-            ->add(new EmailElement('Email *', 'email', 'email'))
+            ->add(new EmailElement('Email *', 'email', 'email', [], 'Entrez votre email'))
             ->add(new TextElement('Sujet *', 'subject', 'subject', [
                 'min' => 3,
                 'max' => 32

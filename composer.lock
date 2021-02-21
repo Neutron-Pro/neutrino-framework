@@ -109,6 +109,46 @@
             "time": "2021-02-21T11:12:17+00:00"
         },
         {
+            "name": "neutronstars/flash-session",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Neutron-Pro/flash-session.git",
+                "reference": "d0ab15ee009a3aac4245febb5f946f2d2155c4ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Neutron-Pro/flash-session/zipball/d0ab15ee009a3aac4245febb5f946f2d2155c4ea",
+                "reference": "d0ab15ee009a3aac4245febb5f946f2d2155c4ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NeutronStars\\FlashSession\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "NeutronStars",
+                    "email": "pro@neutronstars.fr"
+                }
+            ],
+            "description": "Message flash into the session",
+            "support": {
+                "issues": "https://github.com/Neutron-Pro/flash-session/issues",
+                "source": "https://github.com/Neutron-Pro/flash-session/tree/1.0.1"
+            },
+            "time": "2021-02-21T15:56:35+00:00"
+        },
+        {
             "name": "neutronstars/form",
             "version": "1.0.1",
             "source": {
@@ -150,16 +190,16 @@
         },
         {
             "name": "neutronstars/neutrino-core",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Neutron-Pro/neutrino-core.git",
-                "reference": "020d5f54446fc4d8b6c640bf1a7abf9117418cb7"
+                "reference": "77d969866fd58116a99f05c5b3c3bdaab9f8e272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Neutron-Pro/neutrino-core/zipball/020d5f54446fc4d8b6c640bf1a7abf9117418cb7",
-                "reference": "020d5f54446fc4d8b6c640bf1a7abf9117418cb7",
+                "url": "https://api.github.com/repos/Neutron-Pro/neutrino-core/zipball/77d969866fd58116a99f05c5b3c3bdaab9f8e272",
+                "reference": "77d969866fd58116a99f05c5b3c3bdaab9f8e272",
                 "shasum": ""
             },
             "require": {
@@ -167,6 +207,7 @@
                 "ext-json": "*",
                 "ext-pdo": "*",
                 "neutronstars/database-sql": "^1.0",
+                "neutronstars/flash-session": "^1.0",
                 "neutronstars/form": "^1.0",
                 "neutronstars/router": "^1.0",
                 "php": ">= 7.4",
@@ -191,9 +232,9 @@
             "description": "Kernel of Neutrino Framework developed by NeutronStars",
             "support": {
                 "issues": "https://github.com/Neutron-Pro/neutrino-core/issues",
-                "source": "https://github.com/Neutron-Pro/neutrino-core/tree/1.0.4"
+                "source": "https://github.com/Neutron-Pro/neutrino-core/tree/1.0.6"
             },
-            "time": "2021-02-21T12:06:36+00:00"
+            "time": "2021-02-21T15:41:05+00:00"
         },
         {
             "name": "neutronstars/router",

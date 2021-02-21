@@ -6,6 +6,13 @@
             <strong>Bien joué !</strong> Le framework est correctement installé.
         </div>
 
+        <?php foreach ($flashes as $flash): ?>
+            <div class="alert alert-dismissible alert-<?=$flash->getType()?>">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <?= $flash->getMessage() ?>
+            </div>
+        <?php endforeach; ?>
+
         <div class="jumbotron">
             <h1 class="display-4">Bienvenue sur le Framework MVC Neutrino</h1>
             <p class="lead">Ce framework a été développé par NeutronStars.</p>
